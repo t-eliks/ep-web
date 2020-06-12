@@ -1,0 +1,21 @@
+@import "~@material/react-snackbar/dist/snackbar.css";
+
+.snackbar {
+  color: transparent;
+
+  div div {
+    border-radius: 4px;
+  }
+
+  &--error div div {
+    background: #ff3b3f;
+  }
+
+  &--success div div {
+    background: #007849;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}

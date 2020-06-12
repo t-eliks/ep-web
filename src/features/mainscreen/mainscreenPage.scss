@@ -1,0 +1,20 @@
+@import "scss/_vars.scss";
+
+.main-screen {
+  display: flex;
+  flex-flow: row;
+  height: 100vh;
+
+  &__sidebar {
+    flex: 1;
+  }
+
+  &__container {
+    flex: 5;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+  }
+}

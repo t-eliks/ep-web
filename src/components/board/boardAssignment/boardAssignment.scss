@@ -1,0 +1,49 @@
+@import "scss/_vars.scss";
+
+.board-assignment {
+  $vertical_margin: 5px;
+
+  box-shadow: 0 0 5px #a19e9e;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: $vertical_margin;
+  margin-bottom: $vertical_margin;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+  background: #ffffff;
+  color: #373737;
+
+  &:hover {
+    cursor: pointer;
+    background: #008f95;
+    color: $primary_color_highlight;
+  }
+
+  &--drag {
+    opacity: 1;
+  }
+
+  &__name {
+    font-size: 20px;
+  }
+
+  &__assignee {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 18px;
+  }
+
+  &__footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+    &--date {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+    }
+  }
+}

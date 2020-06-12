@@ -1,0 +1,41 @@
+@import "scss/_vars.scss";
+
+.backlog-epic {
+  margin-top: 5px;
+  display: flex;
+  flex-flow: column;
+
+  &__header {
+    $horizontal_margin: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    margin-left: $horizontal_margin;
+    align-items: baseline;
+
+    &--text {
+      max-width: 600px;
+
+      h1 {
+        text-transform: uppercase;
+      }
+
+      span {
+        margin-left: 5px;
+        color: $text_secondary_color;
+      }
+    }
+
+    &--buttons {
+      display: flex;
+      flex-flow: row;
+      margin-right: 20px;
+    }
+
+    &--button {
+      height: 40px;
+      font-size: 16px;
+      margin-right: 5px;
+    }
+  }
+}

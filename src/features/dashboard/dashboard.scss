@@ -1,0 +1,51 @@
+@import "scss/_vars.scss";
+
+.dashboard {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  background: #f4f4f4;
+  align-items: center;
+
+  &__header {
+    $horizontal_margin: 20px;
+
+    margin-left: $horizontal_margin;
+    margin-right: $horizontal_margin;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  &__card {
+    flex: 1;
+  }
+
+  &__projects {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    color: #373737;
+  }
+
+  &__empty-text {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+}
+
+.dashboard-buttons {
+  margin-right: 10px;
+
+  &__profile {
+    margin-right: 10px;
+  }
+}
+
+.dashboard-container {
+  width: 80%;
+  align-items: center;
+}

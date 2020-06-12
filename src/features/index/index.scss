@@ -1,0 +1,175 @@
+@import "scss/_vars.scss";
+
+.container {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../resources/img/meeting.jpg");
+    filter: grayscale(20%) brightness(70%);
+  }
+
+  &__inner {
+    position: relative;
+  }
+}
+
+.menu {
+  text-align: right;
+  padding-top: 5vh;
+  padding-right: 15vw;
+
+  &__link {
+    margin-right: 20px;
+  }
+}
+
+.content {
+  padding: 5vh;
+  margin-top: 25vh;
+  background: $primary_background_color;
+}
+
+.section-container {
+  &__header {
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+
+  &__footer {
+    svg,
+    h3 {
+      display: inline;
+    }
+
+    h3 {
+      margin-left: 15px;
+    }
+
+    $vertical_margin: 10vh;
+
+    margin-top: $vertical_margin;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: $text_primary_color;
+  }
+
+  $horizontal-margin: 15vw;
+
+  margin-left: $horizontal-margin;
+  margin-right: $horizontal-margin;
+}
+
+.section {
+  height: auto;
+  display: flex;
+  margin-top: 10vh;
+  text-align: left;
+
+  &__header {
+    h1 {
+      margin-left: 15px;
+      font-size: 36px;
+      display: inline;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    flex: 3;
+    font-size: 36px;
+    color: $text_primary_color;
+  }
+
+  span {
+    margin-top: 6px;
+    flex: 4;
+    color: $text_secondary_color;
+    font-size: 18px;
+  }
+}
+
+.promo {
+  display: block;
+  text-align: center;
+  padding-top: 15vh;
+
+  &__inner {
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  a {
+    display: block;
+    margin-top: 10px;
+    color: $primary_color_highlight;
+    text-decoration: none;
+  }
+
+  &__link-wrapper {
+    margin-top: 10px;
+  }
+
+  .promo-button {
+    margin-top: 5vh;
+    $horizontal_padding: 45px;
+    $vertical_padding: 10px;
+
+    background: #23c4f8;
+    border: 1px solid transparent;
+    padding-left: $horizontal_padding;
+    padding-right: $horizontal_padding;
+    padding-top: $vertical_padding;
+    padding-bottom: $vertical_padding;
+    color: $primary_color_highlight;
+    font-size: 36px;
+    text-transform: uppercase;
+    filter: drop-shadow(0 0 0.05rem $primary_color_highlight);
+    border-radius: 4px;
+
+    &:hover {
+      background: $secondary_color_highlight;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: 1px solid $primary_color_highlight;
+      filter: drop-shadow(0 0 0.15rem $primary_color_highlight);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  span {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: $primary_color_highlight;
+    filter: drop-shadow(0 0 0.05rem #0f0f0b);
+  }
+
+  &__header {
+    h1 {
+      display: inline;
+      font-family: "Titillium Web", sans-serif;
+      font-size: 130px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    &--first {
+      filter: drop-shadow(0 0 0.1rem #0f0f0b);
+      color: #5cdb95;
+    }
+
+    &--second {
+      color: #23c4f8;
+      filter: drop-shadow(0 0 0.1rem #0f0f0b);
+    }
+  }
+}

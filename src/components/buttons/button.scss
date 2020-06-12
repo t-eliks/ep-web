@@ -1,0 +1,102 @@
+@import "scss/_vars.scss";
+
+.icon {
+  margin-right: 10px;
+}
+
+.button {
+  $vertical_padding: 8px;
+  $horizontal_padding: 40px;
+
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  font-family: "Raleway";
+  font-size: 16px;
+
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  padding-left: $horizontal_padding;
+  padding-right: $horizontal_padding;
+  padding-top: $vertical_padding;
+  padding-bottom: $vertical_padding;
+  transition: all 0.05s ease-in;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--link {
+    color: #edf5e1;
+    text-decoration: none;
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+
+    &:hover {
+      color: $secondary_color;
+      cursor: pointer;
+    }
+  }
+
+  &--main {
+    background: #ffffff;
+    color: #373737;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $primary_color;
+      border-color: $primary_color;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+
+  &--alt {
+    background: #ffffff;
+    color: #373737;
+
+    &:hover {
+      background: #444141;
+      border-color: #444141;
+      cursor: pointer;
+      color: #f4f4f4;
+    }
+  }
+
+  &--icon {
+    padding: 10px;
+    margin-right: 0px;
+    background: #ffffff;
+    color: #373737;
+
+    &:hover {
+      background: $primary_color;
+      border-color: $primary_color;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+
+  &--disabled {
+    text-transform: uppercase;
+    background: #b8b8b8;
+    color: #373737;
+  }
+
+  &--delete {
+    background: $error_color;
+    color: #f4f4f4;
+    border-color: $error_color;
+
+    &:hover {
+      background: $error_color_highlight;
+      cursor: pointer;
+      border-color: $error_color_highlight;
+    }
+  }
+}

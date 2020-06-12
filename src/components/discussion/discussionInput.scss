@@ -1,0 +1,15 @@
+.discussion-input {
+  &__editor {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 2px;
+    margin-bottom: 2em;
+    box-shadow: inset 0px 1px 8px -3px #ababab;
+    background: #fefefe;
+  }
+}
+
+.toolbar {
+  margin-bottom: 15px;
+}

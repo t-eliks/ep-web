@@ -1,0 +1,18 @@
+.discussion-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  flex: 1;
+
+  &__messages {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    &__inner {
+      height: 60vh;
+      overflow: auto;
+      position: relative;
+    }
+  }
+}

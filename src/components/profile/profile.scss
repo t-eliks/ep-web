@@ -1,0 +1,50 @@
+@import "scss/_vars.scss";
+
+.profile {
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__account {
+    $horizontal_padding: 5px;
+    padding-left: $horizontal_padding;
+    padding-right: $horizontal_padding;
+    display: flex;
+    flex-flow: row;
+
+    &:hover {
+      .email,
+      .account-icon {
+        color: $secondary_color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.email,
+.account-icon {
+  font-size: 18px;
+  color: #edf5e1;
+  transition: all 0.1s ease-in-out;
+
+  text-decoration: none;
+}
+
+.account-icon {
+  flex: 1;
+}
+
+.email {
+  flex: 8;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-page-container {
+  width: 80%;
+}

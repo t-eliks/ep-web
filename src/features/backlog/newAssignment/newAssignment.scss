@@ -1,0 +1,20 @@
+@import "src/scss/_vars.scss";
+
+.h1 {
+  color: $text_primary_color;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.span {
+  width: 600px;
+  color: $text_secondary_color;
+}
+
+.button-container {
+  text-align: center;
+
+  button {
+    margin: 5px;
+  }
+}

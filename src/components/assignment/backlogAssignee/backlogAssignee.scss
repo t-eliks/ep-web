@@ -1,0 +1,11 @@
+.backlog-assignee {
+  margin-right: 15px;
+
+  &__icon {
+    margin-right: 5px;
+  }
+
+  &--unassigned {
+    font-style: italic;
+  }
+}

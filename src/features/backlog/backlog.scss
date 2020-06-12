@@ -1,0 +1,17 @@
+@import "scss/_vars.scss";
+
+.backlog-container {
+  flex: 1;
+
+  &__button {
+    height: 50px;
+  }
+}
+
+.top-margin {
+  margin-top: 10px;
+}
+
+.backlog-header {
+  justify-content: space-between;
+}

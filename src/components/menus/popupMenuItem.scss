@@ -1,0 +1,16 @@
+.popup-menu-item {
+  &__wrapper {
+    background: #ffffff;
+    padding: 10px;
+
+    &:hover {
+      background: #e2e2e2;
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    color: #373737;
+    font-size: 18px;
+  }
+}

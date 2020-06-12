@@ -1,0 +1,39 @@
+@import "scss/_vars.scss";
+
+.assignment-status {
+  display: flex;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  max-height: 20px;
+  max-width: 150px;
+  min-width: 100px;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+
+  &--complete {
+    background: #3cc47c;
+    &--hover {
+      background: #3de0b8;
+      color: #373737;
+    }
+  }
+
+  &--in-progress {
+    background: #813772;
+    &--hover {
+      background: #dcb2e0;
+      color: #373737;
+    }
+  }
+
+  &--todo {
+    background: #b82601;
+    &--hover {
+      background: #ecaa73;
+      color: #373737;
+    }
+  }
+}

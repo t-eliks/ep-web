@@ -1,0 +1,81 @@
+@import "scss/_vars.scss";
+
+.project-card {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 5px #a19e9e;
+  transition: all 0.1s ease-in-out;
+
+  &:visited {
+    color: #373737;
+  }
+
+  &:link {
+    color: #373737;
+    text-decoration: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: #f7f7f7;
+  }
+
+  &__description {
+    color: #575252;
+    flex-grow: 5;
+    margin-bottom: 20px;
+  }
+
+  &__stats {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+
+  &__title {
+    display: flex;
+    flex-flow: row;
+
+    span {
+      color: #373737;
+      font-size: 26px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .role {
+      border-bottom: 1px solid gray;
+      margin-right: 5px;
+    }
+  }
+}
+
+.stat {
+  display: block;
+
+  &__icon {
+    color: #373737;
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  &__icon,
+  &__label {
+    font-size: 16px;
+
+    &:visited {
+      color: #373737;
+    }
+  }
+
+  &__title {
+    display: block;
+    color: #5a5a5a;
+  }
+}

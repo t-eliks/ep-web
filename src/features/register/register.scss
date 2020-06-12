@@ -1,0 +1,14 @@
+@import "src/scss/_vars.scss";
+
+.description {
+  width: 600px;
+  color: #575252;
+}
+
+.button-container {
+  text-align: center;
+
+  button {
+    margin: 5px;
+  }
+}

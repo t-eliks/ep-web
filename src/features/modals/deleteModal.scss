@@ -1,0 +1,19 @@
+.delete-modal {
+  &__message {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__buttons > * {
+    margin-left: 10px;
+  }
+}

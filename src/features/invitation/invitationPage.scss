@@ -1,0 +1,21 @@
+.invitation-container {
+  width: 50%;
+  margin: auto;
+  margin-top: 25vh;
+  text-align: center;
+}
+
+h2 {
+  margin: 50px;
+}
+
+.accept-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.accept-button {
+  max-width: 300px;
+  margin-top: 20px;
+  margin-right: 10px;
+}

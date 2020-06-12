@@ -1,0 +1,14 @@
+@import "src/scss/_vars.scss";
+
+.span {
+  width: 600px;
+  color: $text_secondary_color;
+}
+
+.button-container {
+  text-align: center;
+
+  button {
+    margin: 5px;
+  }
+}

@@ -1,0 +1,35 @@
+@import "scss/_vars.scss";
+
+.sidemenu-item {
+  $vertical_padding: 15px;
+  $horizontal_padding: 40px;
+  color: #edf5e1;
+  text-decoration: none;
+
+  padding-left: $horizontal_padding;
+  padding-right: $horizontal_padding;
+  padding-top: $vertical_padding;
+  padding-bottom: $vertical_padding;
+
+  font-size: 18px;
+
+  transition: all 0.1s ease-in;
+  font-family: "Raleway", sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $secondary_color;
+    cursor: pointer;
+  }
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &--active {
+    color: $secondary_color;
+  }
+}

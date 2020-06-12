@@ -1,0 +1,29 @@
+.loader-wrapper {
+  padding: 50px;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+
+  &--min {
+    padding: 2px;
+  }
+}
+
+.loader {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  img {
+    margin-right: 10px;
+  }
+}
+
+.loader-text-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  vertical-align: center;
+  font-size: 26px;
+}

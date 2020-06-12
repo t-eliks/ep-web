@@ -1,0 +1,13 @@
+.footer {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+
+  &__copyright {
+    flex: 2;
+  }
+
+  &__contact {
+    flex: 2;
+  }
+}

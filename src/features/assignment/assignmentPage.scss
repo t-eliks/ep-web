@@ -1,0 +1,35 @@
+.assignment-page {
+  &__status {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+
+  &__info {
+    margin-top: 15px;
+    padding: 10px;
+  }
+
+  &__info-label-wrapper {
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  &__info-label {
+    text-transform: uppercase;
+    color: #5c5c5c;
+  }
+
+  &__info-assignee-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
+.status-label {
+  display: inline-flex;
+}
+
+.status-box {
+  align-items: center;
+}

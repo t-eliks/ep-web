@@ -1,0 +1,19 @@
+.board-column {
+  display: flex;
+  flex-flow: column;
+  background: #ecedfc;
+  border-radius: 4px;
+  border: 1px solid #bebebe;
+  padding: 5px;
+  flex: 1;
+  margin: 10px;
+
+  h1 {
+    color: #575252;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+  }
+}

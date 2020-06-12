@@ -1,0 +1,59 @@
+@import "scss/_vars.scss";
+
+.select-component {
+  margin-bottom: 20px;
+  flex-grow: 1;
+
+  &__header {
+    color: #373737;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+.select-container {
+  $input_border_color: #252525;
+  $vertical_margin: 5px;
+
+  background: #ffffff;
+  margin-top: $vertical_margin;
+  margin-bottom: $vertical_margin;
+  border: solid 2px transparent;
+  display: flex;
+  border-radius: 6px;
+  filter: drop-shadow(0.05rem 0.05rem 0.05rem $input_border_color);
+  transition: all 0.1s ease-in-out;
+
+  &--focused {
+    border: solid 2px $secondary_color_highlight;
+  }
+
+  &--readonly {
+    background: #c0bfbf;
+    color: #f4f4f4;
+  }
+
+  &__select {
+    padding: 4px;
+    padding-left: 20px;
+    flex-grow: 1;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $primary_font_family;
+    background: #ffffff;
+    color: #373737;
+
+    &:focus {
+      outline: none;
+    }
+
+    &--readonly {
+      background: #c0bfbf;
+      color: #f4f4f4;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Galada|Lato|Montserrat|Titillium+Web|Zilla+Slab|Roboto+Mono|Raleway&display=swap");
+@import "~draft-js/dist/Draft.css";
+@import "~draft-js-static-toolbar-plugin/lib/plugin.css";
+@import "scss/_vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background: $primary_background_color;
+  font-family: $primary_font_family, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.title {
+  color: #373737;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.card {
+  display: flex;
+  margin: 20px;
+  border: 1px solid #d3d2d0;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+
+  &--flow-row {
+    flex-flow: row;
+  }
+
+  &--flow-column {
+    flex-flow: column;
+  }
+
+  &--stretch {
+    flex: 1;
+  }
+
+  &--grow {
+    flex-grow: 1;
+  }
+
+  h1 {
+    color: #575252;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 20px;
+  }
+}
+
+.icon-margin {
+  margin-right: 5px;
+}
+
+.table-reg {
+  width: 100%;
+
+  tr {
+    $border: 1px solid #e7dfdd;
+    padding: 10px;
+    display: flex;
+    border-bottom: $border;
+    text-align: left;
+    border-right: $border;
+    border-left: $border;
+    transition: all 0.1s ease-in-out;
+    font-family: "Raleway", sans-serif;
+
+    &:first-of-type {
+      border-top: $border;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: #e0e0e0;
+    }
+  }
+
+  th {
+    font-weight: 400;
+    justify-content: center;
+    flex-flow: column;
+    display: flex;
+  }
+}
+
+.th-small {
+  flex: 1;
+}
+
+.th-wide {
+  flex: 3;
+}
+
+.col2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  & > :first-child {
+    margin-right: 10px;
+  }
+
+  & > * {
+    flex: 1;
+  }
+}
+
+.line-break {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: #acacac 1px solid;
+}
